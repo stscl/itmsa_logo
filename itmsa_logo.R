@@ -1,4 +1,4 @@
-# setwd('../../Downloads/materials/sshicm_logo/')
+# setwd('../../Downloads/materials/itmsa_logo/')
 
 library(showtext)
 showtext_auto(enable = TRUE)
@@ -7,7 +7,7 @@ library(hexSticker)
 library(magick)
 
 sticker(
-  subplot = "./sshicm.png",
+  subplot = "./itmsa.png",
   s_x = 1.015,
   s_y = 1.000,
   s_width = .985,
@@ -27,12 +27,12 @@ sticker(
   # url = "https://stscl.github.io/sshicm",
   # u_color = "#a9fdff",
   # u_size = 5.25,
-  filename = "sshicm_logo.png"
+  filename = "itmsa_logo.png"
 )
 
 # finally make sshicm logo background transparent
 # https://uutool.cn/img-matting/
 
-image_read('./sshicm_logo.png') |> 
+image_read('./itmsa_logo.png') |> 
   image_resize("240x278")|> 
-  image_write('./sshicm_logo.png')
+  image_write('./itmsa_logo.png')
